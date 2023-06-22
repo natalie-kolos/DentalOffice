@@ -718,6 +718,9 @@ header {
         only screen and (min-resolution: 2dppx) {
         background-image: url(../img/img-header-ext@2x.jpg);
       }
+      @media @breakpoint-tablet {
+        height: 200px;
+      }
     }
   }
 }
@@ -782,6 +785,165 @@ header {
     }
     .slick-dots {
       bottom: -32px;
+    }
+  }
+}
+
+.service-page {
+  .breadcrumb-custom {
+    background-color: @secondary-light;
+  }
+}
+
+.services-info {
+  background-color: @secondary-light;
+  .services-info__inner {
+    border-top: 1px solid #cfcfcf;
+    padding: 40px 0;
+    .title {
+      font-size: 24px;
+      font-family: Montserrat;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    p {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.section-related {
+  .section-title {
+    text-align: center;
+  }
+  .service-block {
+    margin: 0 16px;
+  }
+  .slick-dots {
+    bottom: -44px;
+  }
+}
+
+.section-doctors {
+  .team-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin-bottom: 24px;
+    background-color: #f2ede7;
+    padding: 2rem 4rem;
+    border-radius: 2px;
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    img {
+      border-radius: 50%;
+      margin: 0 40px;
+      min-width: 300px;
+    }
+    .title {
+      font-size: 30px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .subtitle {
+      font-size: 22px;
+      font-weight: 300;
+      letter-spacing: 0.66px;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.price {
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  .price-group {
+    .price-block {
+      display: flex;
+      background-color: @secondary;
+      margin-bottom: 1px;
+      justify-content: space-between;
+      padding: 24px 30px 16px 30px;
+      h3 {
+        font-size: 16px;
+        font-weight: 600;
+      }
+      span {
+        flex-shrink: 0;
+      }
+    }
+  }
+}
+
+.pagination {
+  justify-content: center;
+  border-color: @primary;
+  .page-item {
+    margin: 0 8px;
+    .page-link {
+      color: @primary;
+      padding: 4px 12px;
+    }
+  }
+}
+
+.contacts {
+  .socials {
+    a {
+      border: 1px solid @primary;
+    }
+  }
+  .contact-block {
+    margin-bottom: 16px;
+    h4 {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 8px;
+      opacity: 0.6;
+    }
+    a {
+      font-size: 14px;
+      font-weight: 500;
+      color: @primary;
+      text-decoration: none;
+    }
+    p {
+      margin-bottom: 6px;
+    }
+  }
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  align-items: center;
+}
+
+.nav-tabs-custom {
+  .nav-link {
+    background-color: #f2ede7;
+    color: @neutral;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 16px;
+    &.active {
+      font-weight: 700;
+      background-color: transparent;
     }
   }
 }
