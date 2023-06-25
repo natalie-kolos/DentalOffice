@@ -201,11 +201,21 @@ body {
   text-transform: uppercase;
   margin-bottom: 0;
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  .carousel-hero .carousel__additional-blocks .carousel_additional-block__number h3 {
+    font-size: 38px;
+  }
+}
 .carousel-hero .carousel__additional-blocks .carousel_additional-block__number h4 {
   font-weight: 500;
   font-size: 24px;
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .carousel-hero .carousel__additional-blocks .carousel_additional-block__number h4 {
+    font-size: 12px;
+  }
 }
 .carousel-hero .carousel__additional-blocks .carousel_additional-block__number p a {
   font-weight: 300;
@@ -213,6 +223,11 @@ body {
   line-height: 20px;
   text-decoration: none;
   color: #f2ede7;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .carousel-hero .carousel__additional-blocks .carousel_additional-block__number p a {
+    font-size: 14px;
+  }
 }
 .carousel-hero .carousel_additional-block__image {
   background-image: url(../img/img-hero-add-sm.jpg);
@@ -280,6 +295,12 @@ body {
   left: 48%;
   flex-direction: column;
   margin: 0;
+}
+@media (max-width: 767px) {
+  .carousel-hero .carousel-indicators {
+    bottom: 14px;
+    flex-direction: row;
+  }
 }
 .carousel-hero .carousel-indicators [data-bs-target] {
   width: 6px;
@@ -921,4 +942,56 @@ header.exterior .header-ext__img {
 .nav-tabs-custom .nav-link.active {
   font-weight: 700;
   background-color: transparent;
+}
+#background-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.carousel__main-video {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 445px;
+}
+@media (max-width: 991px) {
+  .carousel__main-video {
+    height: 80%;
+  }
+}
+video {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.form-modal .modal-header {
+  border-bottom-color: transparent;
+}
+.form-modal .modal-body {
+  padding: 3rem;
+  padding-top: 0;
+}
+.form-modal .section-title {
+  margin-bottom: 32px;
+}
+.form-modal .section-title .overline {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: 0.03em;
+  margin-bottom: 6px;
+}
+@media (max-width: 767px) {
+  .form-modal .section-title .overline {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
