@@ -995,3 +995,6 @@ video {
     line-height: 24px;
   }
 }
+.related-news .section-title {
+  text-align: center;
+}
