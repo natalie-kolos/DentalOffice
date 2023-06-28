@@ -132,26 +132,36 @@ body {
 }
 .carousel-hero {
   .carousel__main-image {
-    background-image: url(../img/img-hero.jpg);
+    position: relative;
+    width: 100%;
     height: 60%;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-height: 445px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    @media only screen and (-webkit-min-device-pixel-ratio: 2),
-      only screen and (min--moz-device-pixel-ratio: 2),
-      only screen and (-o-min-device-pixel-ratio: 2/1),
-      only screen and (min-device-pixel-ratio: 2),
-      only screen and (min-resolution: 192dpi),
-      only screen and (min-resolution: 2dppx) {
-      background-image: url(../img/img-hero-xl.jpg);
-    }
     @media @breakpoint-tablet {
       height: 80%;
     }
-    @media @breakpoint-mobile {
-      height: 300px;
+    @media @breakpoint-mobile-sm {
       min-height: auto;
+      height: auto;
+    }
+    img {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      @media @breakpoint-mobile-sm {
+        position: inherit;
+        max-width: 100%;
+        height: auto;
+      }
     }
   }
   .carousel__additional-blocks {
@@ -196,19 +206,33 @@ body {
     }
   }
   .carousel_additional-block__image {
-    background-image: url(../img/img-hero-add-sm.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: relative;
+    width: 100%;
     height: 100%;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-height: 200px;
-    @media only screen and (-webkit-min-device-pixel-ratio: 2),
-      only screen and (min--moz-device-pixel-ratio: 2),
-      only screen and (-o-min-device-pixel-ratio: 2/1),
-      only screen and (min-device-pixel-ratio: 2),
-      only screen and (min-resolution: 192dpi),
-      only screen and (min-resolution: 2dppx) {
-      background-image: url(../img/img-hero-add-sm@2x.jpg);
+    @media @breakpoint-mobile-sm {
+      min-height: auto;
+      height: auto;
+    }
+    img {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      @media @breakpoint-mobile-sm {
+        position: inherit;
+        max-width: 100%;
+        height: auto;
+      }
     }
   }
   .carousel-caption__custom {
@@ -345,24 +369,34 @@ section {
     flex-direction: column;
   }
   .service-block__img {
-    width: 220px;
-    height: auto;
-    background-image: url(../img/img-service.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    flex-shrink: 0;
-    @media only screen and (-webkit-min-device-pixel-ratio: 2),
-      only screen and (min--moz-device-pixel-ratio: 2),
-      only screen and (-o-min-device-pixel-ratio: 2/1),
-      only screen and (min-device-pixel-ratio: 2),
-      only screen and (min-resolution: 192dpi),
-      only screen and (min-resolution: 2dppx) {
-      background-image: url(../img/img-service@2x.jpg);
-    }
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 220px;
     @media @breakpoint-mobile-sm {
+      max-width: 100%;
+    }
+
+    img {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      object-fit: cover;
+      height: 100%;
       width: 100%;
-      height: 200px;
+      top: 0;
+      left: 0;
+
+      @media @breakpoint-mobile-sm {
+        position: inherit;
+        max-width: 100%;
+        height: auto;
+      }
     }
   }
   .service-block__content {
@@ -542,6 +576,9 @@ section {
 }
 
 .news-block {
+  img {
+    width: 100%;
+  }
   .news-block__desc {
     background-color: @primary;
     color: white;

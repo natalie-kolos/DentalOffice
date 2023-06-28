@@ -159,27 +159,42 @@ body {
   text-decoration: none;
 }
 .carousel-hero .carousel__main-image {
-  background-image: url(../img/img-hero.jpg);
+  position: relative;
+  width: 100%;
   height: 60%;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 445px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .carousel-hero .carousel__main-image {
-    background-image: url(../img/img-hero-xl.jpg);
-  }
 }
 @media (max-width: 991px) {
   .carousel-hero .carousel__main-image {
     height: 80%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 575px) {
   .carousel-hero .carousel__main-image {
-    height: 300px;
     min-height: auto;
+    height: auto;
+  }
+}
+.carousel-hero .carousel__main-image img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+@media (max-width: 575px) {
+  .carousel-hero .carousel__main-image img {
+    position: inherit;
+    max-width: 100%;
+    height: auto;
   }
 }
 .carousel-hero .carousel__additional-blocks {
@@ -230,16 +245,37 @@ body {
   }
 }
 .carousel-hero .carousel_additional-block__image {
-  background-image: url(../img/img-hero-add-sm.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
+  width: 100%;
   height: 100%;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 200px;
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+@media (max-width: 575px) {
   .carousel-hero .carousel_additional-block__image {
-    background-image: url(../img/img-hero-add-sm@2x.jpg);
+    min-height: auto;
+    height: auto;
+  }
+}
+.carousel-hero .carousel_additional-block__image img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+@media (max-width: 575px) {
+  .carousel-hero .carousel_additional-block__image img {
+    position: inherit;
+    max-width: 100%;
+    height: auto;
   }
 }
 .carousel-hero .carousel-caption__custom {
@@ -391,23 +427,36 @@ section.section-dark .section-title .title {
   }
 }
 .service-block .service-block__img {
-  width: 220px;
-  height: auto;
-  background-image: url(../img/img-service.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  flex-shrink: 0;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .service-block .service-block__img {
-    background-image: url(../img/img-service@2x.jpg);
-  }
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 220px;
 }
 @media (max-width: 575px) {
   .service-block .service-block__img {
-    width: 100%;
-    height: 200px;
+    max-width: 100%;
+  }
+}
+.service-block .service-block__img img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+@media (max-width: 575px) {
+  .service-block .service-block__img img {
+    position: inherit;
+    max-width: 100%;
+    height: auto;
   }
 }
 .service-block .service-block__content {
@@ -565,6 +614,9 @@ section.section-dark .section-title .title {
   background-color: #1d1d1d;
   padding: 4rem;
   color: white;
+}
+.news-block img {
+  width: 100%;
 }
 .news-block .news-block__desc {
   background-color: #1d1d1d;
