@@ -918,13 +918,28 @@ header.exterior .header-ext__img img {
   padding: 2rem 4rem;
   border-radius: 2px;
 }
+@media (max-width: 991px) {
+  .section-doctors .team-card {
+    flex-direction: column;
+  }
+}
 .section-doctors .team-card:nth-child(even) {
   flex-direction: row-reverse;
+}
+@media (max-width: 991px) {
+  .section-doctors .team-card:nth-child(even) {
+    flex-direction: column;
+  }
 }
 .section-doctors .team-card img {
   border-radius: 50%;
   margin: 0 40px;
   min-width: 300px;
+}
+@media (max-width: 991px) {
+  .section-doctors .team-card img {
+    margin-bottom: 24px;
+  }
 }
 .section-doctors .team-card .title {
   font-size: 30px;
