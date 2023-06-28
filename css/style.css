@@ -553,21 +553,33 @@ section.section-dark .section-title .title {
   }
 }
 .review-custom .review-custom-main .review-custom-main__img {
+  position: relative;
   width: 50%;
-  height: auto;
-  background-image: url(../img/img-review.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  flex-shrink: 0;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .review-custom .review-custom-main .review-custom-main__img {
-    background-image: url(../img/img-review@2x.jpg);
-  }
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 300px;
 }
 @media (max-width: 767px) {
   .review-custom .review-custom-main .review-custom-main__img {
+    display: none;
+  }
+}
+.review-custom .review-custom-main .review-custom-main__img img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+@media (max-width: 767px) {
+  .review-custom .review-custom-main .review-custom-main__img img {
     display: none;
   }
 }
