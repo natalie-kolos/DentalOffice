@@ -1016,10 +1016,15 @@ header {
     color: @neutral;
     font-size: 16px;
     font-weight: 500;
-    margin-right: 16px;
+    margin-bottom: 16px;
+    border-radius: @border-radius;
+    text-align: left;
     &.active {
-      font-weight: 700;
-      background-color: transparent;
+      background-color: @primary;
+    }
+    &:hover {
+      background-color: @primary;
+      color: white;
     }
   }
 }
@@ -1081,4 +1086,8 @@ video {
   .section-title {
     text-align: center;
   }
+}
+
+.bg-secondary {
+  background-color: @secondary-light;
 }

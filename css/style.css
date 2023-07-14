@@ -1034,11 +1034,16 @@ header.exterior .header-ext__img img {
   color: #535353;
   font-size: 16px;
   font-weight: 500;
-  margin-right: 16px;
+  margin-bottom: 16px;
+  border-radius: 2px;
+  text-align: left;
 }
 .nav-tabs-custom .nav-link.active {
-  font-weight: 700;
-  background-color: transparent;
+  background-color: #1d1d1d;
+}
+.nav-tabs-custom .nav-link:hover {
+  background-color: #1d1d1d;
+  color: white;
 }
 #background-video {
   position: absolute;
@@ -1094,4 +1099,7 @@ video {
 }
 .related-news .section-title {
   text-align: center;
+}
+.bg-secondary {
+  background-color: #f8f5f1;
 }
