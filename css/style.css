@@ -36,6 +36,11 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
+a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #1d1d1d;
+}
 .btn-custom {
   padding: 12px 24px;
   font-weight: 500;
@@ -1101,5 +1106,5 @@ video {
   text-align: center;
 }
 .bg-secondary {
-  background-color: #f8f5f1;
+  background-color: #f8f5f1 !important;
 }
