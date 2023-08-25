@@ -425,6 +425,7 @@ section.section-dark .section-title .title {
 .service-block {
   display: flex;
   height: 100%;
+  min-height: 240px;
 }
 @media (max-width: 575px) {
   .service-block {
@@ -1045,6 +1046,8 @@ header.exterior .header-ext__img img {
 }
 .nav-tabs-custom .nav-link.active {
   background-color: #1d1d1d;
+  color: white;
+  font-weight: 600;
 }
 .nav-tabs-custom .nav-link:hover {
   background-color: #1d1d1d;
